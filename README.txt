@@ -1,13 +1,10 @@
-SMART PLANNER PRO — WEB APP
+SMART PLANNER PRO v2 - MANUAL GITHUB UPDATE
 
-PUBLISH TO A PERMANENT WEB ADDRESS
-1. Unzip the package.
-2. Sign in to a static web host such as Netlify or Cloudflare Pages.
-3. Upload the unzipped smart-planner folder using the host's manual deployment option.
-4. The host will provide a public HTTPS web address. Save/bookmark that address.
-5. On Android Chrome, open the address and use Add to Home screen / Install app.
+1. Open the live app and export a JSON backup FIRST.
+2. GitHub repository > Code > root directory. Upload index.html, manifest.webmanifest, sw.js and README.txt from this ZIP, replacing matching files. Commit changes.
+3. Settings > Pages: deploy main branch /(root). Wait for deployment. Hard-refresh the website (Ctrl+Shift+R).
+4. If the app was previously in a smart-planner subfolder, this root deployment is a separate browser storage origin/path. Import your exported backup if records do not appear.
 
-IMPORTANT LIMITATIONS
-This edition saves data in each browser's local storage only. Publishing does NOT create a cloud database, secure online login, device sync or server-side backups. A PIN is only a local convenience lock, not strong account security. Use the app's Export Backup function regularly and keep the backup in a safe location. Clearing browser data or changing devices can erase local data unless restored from backup. Do not store sensitive financial or personal information until a secure hosted backend has been configured.
+New in v2: calendar, due-today and overdue filters, completion insights, CSV report. Previous localStorage key spp_records_v1 retained.
 
-To add real multi-device access, connect secure authentication, a database, server-side access rules, and backups. Those steps require a hosting/database account controlled by the owner.
+WARNING: Local-only browser storage; PIN is not secure authentication. No cloud database or multi-user access. Do not store sensitive data.
